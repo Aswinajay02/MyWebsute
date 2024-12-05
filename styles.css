@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #a1eaf6;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+/* Contact Links */
+.contact-link {
+    text-decoration: none;
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  /* Service Links */
+.service-link {
+    text-decoration: none;
+    color: #333; /* Default text color */
+    transition: color 0.3s ease;
+  }
+  
+  .service-link:hover {
+    color: #007bff; /* Change to blue on hover */
+  }
+  /* Service Links */
+.service-link {
+    text-decoration: none;
+    color: #333; /* Default text color */
+    transition: color 0.3s ease;
+  }
+  
+  .service-link:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  
+  .contact-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  /* Team Member Images */
+.team-photo {
+    width: 200px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    object-fit: cover; /* Ensures the image fits within the specified dimensions */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 20px; /* Adds space below the image */
+  }
+  /* General Card Styling */
+.service-card {
+    background-color: #f4f4f4; /* Default background color of the box */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect to change box background color */
+  .service-card:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* Change text color to white */
+  }
+  
+  /* Styling for Links */
+  .service-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for Links */
+  .service-link:hover {
+    color: #fff; /* White text color on hover */
+  }
+  
+  /* Adjusting container for cards */
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  /* General styles for the new service pages */
+#meta-ads, #youtube-ads {
+  padding: 40px;
+  text-align: center;
+}
+
+#meta-ads h1, #youtube-ads h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#meta-ads ul, #youtube-ads ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#meta-ads ul li, #youtube-ads ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+  
+  .card-container .service-card {
+    flex: 1 1 22%; /* Adjust the width of each service card */
+    max-width: 22%;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container .service-card {
+      flex: 1 1 48%; /* Adjust to 2 columns on small screens */
+      max-width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container .service-card {
+      flex: 1 1 100%; /* Adjust to 1 column on very small screens */
+      max-width: 100%;
+    }
+  }
+  
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: #fff;
+}
+
+#hero .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background: #fff;
+  color: #00bcd4;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#hero .cta:hover {
+  background: #2196f3;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+/* Make the entire service card clickable */
+.service-card {
+  display: block;
+  text-decoration: none;
+  background-color: #f4f4f4; /* Default background color of the box */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  color: #333; /* Default text color */
+}
+
+.service-card:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: white; /* Change text color to white */
+  cursor: pointer;
+}
+
+/* Adjust the layout */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-container .service-card {
+  flex: 1 1 22%; /* Adjust the width of each service card */
+  max-width: 22%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-container .service-card {
+    flex: 1 1 48%; /* Adjust to 2 columns on small screens */
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container .service-card {
+    flex: 1 1 100%; /* Adjust to 1 column on very small screens */
+    max-width: 100%;
+  }
+}
